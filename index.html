@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gerador de Código para Cypress</title>
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.26.0/themes/prism-tomorrow.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" />
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<div class="container">
+    <h1>Gerador de Código para Cypress</h1>
+    <div class="form-group">
+        <label for="featureName">Nome da Funcionalidade:</label>
+        <input type="text" id="featureName" placeholder="Ex: ConsultaCadastroCPF">
+    </div>
+    <div class="form-group">
+        <button onclick="generateCode()">Gerar Código</button>
+    </div>
+    <h2>Page Object</h2>
+    <pre><code id="pageObjectCode" class="language-javascript"></code><button class="copy-btn" onclick="copyToClipboard('pageObjectCode')"><i class="fas fa-copy"></i></button></pre>
+    <h2>Handler</h2>
+    <pre><code id="handlerCode" class="language-javascript"></code><button class="copy-btn" onclick="copyToClipboard('handlerCode')"><i class="fas fa-copy"></i></button></pre>
+    <h2>Spec</h2>
+    <pre><code id="specCode" class="language-javascript"></code><button class="copy-btn" onclick="copyToClipboard('specCode')"><i class="fas fa-copy"></i></button></pre>
+</div>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.26.0/prism.min.js"></script>
+<script src="script.js"></script>
+</body>
+</html>
