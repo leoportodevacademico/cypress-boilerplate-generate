@@ -65,6 +65,7 @@ pre {
 }
 code {
     font-family: 'Courier New', Courier, monospace;
+    margin: 10px;
 }
 .copy-btn {
     position: absolute;
